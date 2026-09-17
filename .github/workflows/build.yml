@@ -1,0 +1,17 @@
+# Name of the Workflow
+name: Build
+
+#When the workflow should run
+on: 
+  workflow_call:
+
+#Jobs in the workflow
+  jobs:
+      build: 
+      runs-on: ubuntu-latest
+      
+      steps:
+      -name: Build the code
+      run: echo 'Build the code'
+
+     
